@@ -1,0 +1,335 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+p{ font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEE82C;
+    text-decoration:dashed;
+    font-size: 30px;
+}
+
+#h1-inicio{
+
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+    background-color:#62152d;
+    text-decoration:dashed;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+#h4-inicio{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color:#62152d;
+    color: #ffffff;
+    padding-top:0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+}
+
+.contenedor_nav_index{
+    background-color: #62152d;
+    margin: 0%;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end; 
+    list-style: none;
+
+}
+
+.contenedor_nav_paginas{
+    background-color: #62152d;
+    margin: 0%;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end; 
+    list-style: none;
+  
+
+}
+
+main{
+    background-color: antiquewhite;
+}
+
+.boton{
+    padding: 10px 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    
+}  
+
+.contenedor-header{
+    background-color: #EEE82C;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.contenedor-header-paginas{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #62152d;
+
+}
+
+.header-paginas img{
+
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-around;
+
+
+
+}
+
+.tarjeta{
+    grid-area: tarjeta;
+    width: 300px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    transition: 0.2s;
+
+}
+
+.tarjeta:hover{
+    box-shadow: 3.9px 7.8px 7.8px hsl(0deg 0% 0% / 0.38);
+}
+
+.tarjeta-imagen img {
+
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;  
+        height: 300px; 
+}
+
+.tarjeta-cuerpo h2{
+    text-align: center;
+}
+
+.tarjeta-cuerpo p{
+    text-align:justify;
+    margin-bottom: 10px;
+    padding: 5px;
+
+}
+
+.tarjeta-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-footer button{
+    width: 150px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    padding: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.2s;
+    
+}
+
+.tarjeta-footer button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.tarjeta-cuerpo p span{
+    font-size: small;
+}
+
+footer{
+    background-color:#faebd7;
+}
+.contenedor-footer{
+    width:auto;
+    height:max-content;
+    padding-top: 50px;
+    background-color: #faebd7;
+    display: grid;
+    
+    grid-template-areas: 
+        "entrega operador abierto24"
+        "recomendaciones recomendaciones recomendaciones"
+    ;
+    justify-items: stretch;
+}
+
+.footer-entrega{
+    
+    display: flex;
+    grid-area: entrega;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.footer-entrega img{
+    width: 120px;
+    
+}
+
+.footer-entrega p{
+    width: 250px;
+    text-align:start;
+}
+
+.footer-operador { 
+    display: flex;
+    grid-area: operador;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 100px;
+}
+
+.footer-operador img{
+    width: 120px;
+}
+
+.footer-operador p{
+    width: 120px;
+    text-align: center;
+}
+
+.footer-abierto24 {
+    display: flex;
+    grid-area: abierto24;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 100px;
+
+}
+.footer-abierto24 img{
+    width: 120px;
+}
+
+.footer-abierto24 p{
+    width: 120px;
+    text-align: center;
+}
+
+.footer-recomendaciones{
+background-color: #62152d;
+color: #ffffff;
+font-size: smaller;
+text-align: center;
+grid-area: recomendaciones;
+padding:  20px;
+}
+
+@media screen and (max-width: 320px) {
+
+    .nav{
+        position: relative;
+        top: 0px;
+        
+    }
+
+    .contenedor_nav_index {
+        background-color:#EEE82C;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 200px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .boton{
+        padding:0%;
+        font-family: 'Open Sans', sans-serif;
+        color:#62152d;
+        text-decoration:solid;
+        font-size: 1em;
+        border: solid;
+        margin: 8px;
+        background-color: #ffffff;    
+    }  
+
+    .contenedor-header-paginas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        background-color: #62152d;
+    }
+
+    .contenedor_nav_paginas{
+        background-color:#62152d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 200px;
+        justify-content: space-between;
+        align-items: center;}
+
+    .contenedor-header{
+        background-color: #EEE82C;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 300px;}
+
+    .contenedor-footer {
+        width: auto;
+        height: max-content;
+        padding-top: 50px;
+        background-color: #faebd7;
+        display: flex;
+        grid-template-areas:
+            "entrega operador abierto24"
+            "recomendaciones recomendaciones recomendaciones";
+        justify-content: start;
+        align-content: center;
+        flex-direction: column;}
+}    
+
