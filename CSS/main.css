@@ -14,8 +14,16 @@ h1{
     text-decoration:dashed;
     font-size: 30px;
     color: #ffffff;
+    font-size: 3em;
 }
 
+.titulos-h2{
+    text-align: center;
+    color:#000000;
+    padding-bottom: 16px;
+    padding-top: 25px;
+    margin-top: 50px;
+}
 #h1-inicio{
 
     text-align: center;
@@ -26,6 +34,7 @@ h1{
     padding-top: 50px;
     padding-bottom: 20px;
     color: #ffffff;
+    margin: 0%;
 }
 
 #h4-inicio{
@@ -37,6 +46,7 @@ h1{
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 30px;
+    margin: 0%;
 
 }
 
