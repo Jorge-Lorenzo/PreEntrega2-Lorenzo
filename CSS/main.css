@@ -100,31 +100,18 @@ main{
     flex-wrap: wrap;
     font-family: 'Open Sans', sans-serif;
     justify-content: space-around;
-
-
-
 }
 
 iframe{
     width: 560px;
 }
 
-.contenedor-blog{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+.col-12 h2{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
-.contenedor-videos{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-
-
-}
 
 .tarjeta{
     grid-area: tarjeta;
