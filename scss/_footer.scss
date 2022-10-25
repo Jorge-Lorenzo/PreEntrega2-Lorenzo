@@ -1,0 +1,91 @@
+footer{
+    background-color:#dfdfdf;
+}
+
+.contenedor-footer{
+    width:auto;
+    height:max-content;
+    padding-top: 50px;
+    background-color: $color-secundario;
+    color: #ffffff;
+    display: grid;
+    
+    grid-template-areas: 
+        "entrega operador abierto24"
+        "recomendaciones recomendaciones recomendaciones"
+    ;
+    justify-items: stretch;
+}
+
+.footer-entrega{
+    
+    display: flex;
+    grid-area: entrega;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.footer-entrega{
+    img{
+    width: 120px;
+    }
+    
+}
+
+.footer-entrega{ 
+    p{
+    width: 250px;
+    text-align:start;}
+}
+
+.footer-operador { 
+    display: flex;
+    grid-area: operador;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 100px;
+}
+
+.footer-operador{ 
+    img{
+    width: 120px;}
+}
+
+.footer-operador{ 
+    p{
+    width: 120px;
+    text-align: center;}
+}
+
+.footer-abierto24 {
+    display: flex;
+    grid-area: abierto24;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 100px;
+
+}
+.footer-abierto24{
+    img{
+    width: 120px;}
+}
+
+.footer-abierto24{
+    p{
+    width: 120px;
+    text-align: center;}
+}
+
+.footer-recomendaciones{
+background-color:$color-primario;
+color: #ffffff;
+font-size:medium;
+text-align: center;
+grid-area: recomendaciones;
+padding:  20px;
+}

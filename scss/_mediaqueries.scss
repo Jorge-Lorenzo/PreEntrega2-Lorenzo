@@ -1,0 +1,43 @@
+@media screen and (max-width: 1200px){
+
+    .contenedor-footer{
+        display: grid;
+        
+        grid-template-areas: 
+            "entrega operador"
+            "abierto24 abierto24"
+            "recomendaciones recomendaciones"
+        ;
+        justify-items: stretch;
+    }
+   
+    iframe{
+        width: 560px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .contenedor-footer {
+        display: flex;
+        justify-content: start;
+        align-content: center;
+        flex-direction: column;}
+
+    iframe{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .contenedor-footer {
+        display: flex;
+        justify-content: start;
+        align-content: center;
+        flex-direction: column;}
+
+        iframe{
+            width: 100%;
+        }
+}    
