@@ -1,3 +1,10 @@
+//MIXIN
+@mixin padding($top, $bottom){
+    padding-top: $top;
+    padding-bottom: $bottom;
+
+}
+
 p{ font-family: 'Open Sans', sans-serif;
 }
 
@@ -6,17 +13,19 @@ h1{
     font-family: 'Open Sans', sans-serif;
     background-color: $color-secundario;
     text-decoration:dashed;
-    font-size: 30px;
+    //operaciones adicion
+    font-size: $spacing*2;
     color: #ffffff;
     font-size: 3em;
+    margin-bottom: 0%;
 }
 
 .titulos-h2{
     text-align: center;
     color:#000000;
-    padding-bottom: 16px;
-    padding-top: 25px;
-    margin-top: 50px;
+    @include padding(25px,16px);
+    margin-top: 0%;
+    background-color: #dfdfdf;
 }
 #h1-inicio{
 
@@ -25,8 +34,7 @@ h1{
 
     background-color: $color-primario;
     text-decoration:dashed;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    @include padding(50px, 30px);
     color: #ffffff;
     margin: 0%;
 }
@@ -36,11 +44,12 @@ h1{
     font-family: 'Open Sans', sans-serif;
     background-color: $color-secundario;
     color: #ffffff;
-    padding-top:0;
-    padding-left: 50px;
+    @include padding(30px,30px);
     padding-right: 50px;
-    padding-bottom: 30px;
-    margin: 0%;
+    padding-left: 50px;
+    
+    
+    margin:0%;
 
 }
 
@@ -50,7 +59,6 @@ main{
 
 .contenedor{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     font-family: 'Open Sans', sans-serif;
     justify-content: space-around;
@@ -116,8 +124,8 @@ iframe{
         width: 150px;
         background: #000000;
         color: #ffffff;
-        border-radius: 15px;
-        border: 2px solid #000000;
+        border-radius: $spacing;
+        @extend.boton;
         padding: 6px;
         font-size: 17px;
         cursor: pointer;
@@ -131,7 +139,8 @@ iframe{
     button:hover{
         background-color: #ffffff;
         color: #000000;
-        border: 2px solid #000000;
+        @extend.boton;
+        
     }    
 }
 

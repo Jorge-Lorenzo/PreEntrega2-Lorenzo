@@ -5,20 +5,32 @@
     
 }
 
+.nav-item{
+    a:hover{
+       color:  $color-terciario !important;
+    }
+}
+
 .nav-link{
     color: #ffffff !important;
 
 }
-.btn{
+
+
+//EXTEND 
+.boton{
     border: #000000 solid 1px !important;
+}
+
+.btn{
+    @extend.boton;
     border-radius: 10px !important;
     background-color: #ffffff !important;
     color: #000000 !important;
 }
 
 .form-control{
-
-    border: #000000 solid 1px !important;
+    @extend.boton;
 }
 
 .container-img {
