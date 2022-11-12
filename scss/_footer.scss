@@ -12,9 +12,39 @@ footer{
     
     grid-template-areas: 
         "entrega operador abierto24"
+        "suscribete suscribete suscribete"
         "recomendaciones recomendaciones recomendaciones"
     ;
     justify-items: stretch;
+}
+
+.footer-suscribete{
+    grid-area: suscribete;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; 
+    background-color: $color-primario;
+
+    input{
+        width: 100%;
+        font-size: small;
+        padding: 11px $spacing;
+        margin-bottom: $spacing;
+        border: #000000 solid 2px;
+        text-align: center;
+    }
+
+    button{
+        width: 100%;
+        font-size: large;
+        font-weight: bold;
+        margin-bottom: $spacing*2;
+    }    
+    button:hover{
+        box-shadow: 20px 20px 20px 10px rgba(0,0,0,.5);
+    }
 }
 
 .footer-entrega{
@@ -82,7 +112,7 @@ footer{
 }
 
 .footer-recomendaciones{
-background-color:$color-primario;
+background-color:$color-secundario;
 color: #ffffff;
 font-size:medium;
 text-align: center;

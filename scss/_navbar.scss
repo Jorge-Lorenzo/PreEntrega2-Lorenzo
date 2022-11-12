@@ -1,18 +1,20 @@
 .navbar{
     position: sticky;
     top: 0px;
-    background-color: $color-primario !important;
+    background-color: $color-primario;
+    z-index: 999;
+
     
 }
 
 .nav-item{
     a:hover{
-       color:  $color-terciario !important;
+       color:  $color-terciario;
     }
 }
 
 .nav-link{
-    color: #ffffff !important;
+    color: #ffffff;
 
 }
 
@@ -24,9 +26,9 @@
 
 .btn{
     @extend.boton;
-    border-radius: 10px !important;
-    background-color: #ffffff !important;
-    color: #000000 !important;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color:#000000;
 }
 
 .form-control{
@@ -48,5 +50,5 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    justify-content: flex-start !important;
+    justify-content: flex-start;
 }
