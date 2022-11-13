@@ -1,7 +1,7 @@
 {
   "name": "vinitoshop-jorge-lorenzo",
   "version": "1.0.0",
-  "description": "Segunda Pre Entrega de mi proyecto final",
+  "description": "Entrega final de mi proyecto",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
