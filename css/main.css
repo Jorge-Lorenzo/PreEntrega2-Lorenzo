@@ -15,7 +15,7 @@
   color: #ffffff; }
 
 .boton, .btn, .form-control, .tarjeta-footer button, .tarjeta-footer button:hover {
-  border: #000000 solid 1px !important; }
+  border: #000000 solid 1px; }
 
 .btn {
   border-radius: 10px;
@@ -74,10 +74,10 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   background-color: #4abdac;
   color: #ffffff;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-right: 100px;
+  padding-left: 100px;
   margin: 0%; }
 
 main {
@@ -155,9 +155,7 @@ footer {
   background-color: #4abdac;
   color: #ffffff;
   display: grid;
-  grid-template-areas: "entrega operador abierto24"
- "suscribete suscribete suscribete"
- "recomendaciones recomendaciones recomendaciones";
+  grid-template-areas: "entrega operador abierto24" "suscribete suscribete suscribete" "recomendaciones recomendaciones recomendaciones";
   justify-items: stretch; }
 
 .footer-suscribete {
@@ -239,10 +237,7 @@ footer {
 
 @media screen and (max-width: 1200px) {
   .contenedor-footer {
-    grid-template-areas: "entrega operador"
- "abierto24 abierto24"
- "suscribete suscribete"
- "recomendaciones recomendaciones"; }
+    grid-template-areas: "entrega operador" "abierto24 abierto24" "suscribete suscribete" "recomendaciones recomendaciones"; }
   iframe {
     width: 560px; } }
 

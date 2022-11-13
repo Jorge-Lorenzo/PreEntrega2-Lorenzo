@@ -46,9 +46,9 @@ h1{
     font-family: 'Open Sans', sans-serif;
     background-color: $color-secundario;
     color: #ffffff;
-    @include padding(30px,30px);
-    padding-right: 50px;
-    padding-left: 50px;
+    @include padding(50px,100px);
+    padding-right: 100px;
+    padding-left: 100px;
     margin:0%;
 
 }
